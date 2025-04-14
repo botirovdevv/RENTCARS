@@ -1,0 +1,167 @@
+.nav {
+    padding-top: 25px;
+
+    &-content {
+        @include flex(center, space-between);
+    }
+
+    &-bg{
+        background-color: #0000007c;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+        backdrop-filter: blur(2px);
+
+        &.active{
+            opacity: 1;
+            visibility: visible
+        }
+    }
+
+    &-user{
+        display: none;
+        background: transparent;
+        border: none;
+        font-size: 15px;
+        background: #1572d3;
+        color: #fff;
+        padding: 11px 13px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    
+        &:hover {
+          opacity: 0.8;
+        }
+
+        @media screen and (max-width: 460px){
+            display: block;
+        }
+
+    }
+
+    &-logo {
+        @include flex(center, unset);
+        gap: 8px;
+
+        &_text {
+            font-family: $font-family;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #1572d3;
+        }
+    }
+
+    &-links {
+        @include flex(center, unset);
+        gap: 14px;
+
+        @media screen and (max-width: 835px){
+            position: fixed;
+            z-index: 99999;
+            background-color: #1572d3;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            width: 325px;
+            gap: 20px;
+            transform: translateX(100%);
+            transition: all 0.2s ease-in-out;
+        }
+
+        &.show{
+            transform: translateX(0);
+        }
+    }
+
+    &-menu{
+        display: none;
+
+        @media screen and (max-width: 835px){
+            display: block;
+            padding-top: 7px;
+        }
+    }
+
+    &-link {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #484848;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            color: #1572d3
+        }
+
+        @media screen and (max-width: 835px){
+            color: #fff;
+        }
+
+    }
+
+    &-join{
+        @include flex(center, unset);
+        gap: 8px;
+    
+    }
+
+    &-sign_in {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #484848;
+
+        @media screen and (max-width: 885px){
+            display: none;
+        }
+
+        @media screen and (max-width: 460px){
+            display: none;
+        }
+    }
+
+    &-sign_up {
+        border-radius: 8px;
+        padding: 12px 28px;
+        background: #1572d3;
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        @media screen and (max-width: 460px){
+            display: none;
+        }
+    }
+
+    &-menu{
+        border: none;
+        font-size: 30px;
+
+        &_close{
+            position: fixed;
+            top: 20px;
+            right: 50px;
+            border: none;
+            font-size: 25px;
+            color: #fff;
+        }
+    }
+}
