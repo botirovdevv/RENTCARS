@@ -1,5 +1,8 @@
 .nav {
     padding-top: 25px;
+    position: relative;
+    z-index: 1000;
+    background-color: transparent;
 
     &-content {
         @include flex(center, space-between);
@@ -156,12 +159,17 @@
         font-size: 30px;
 
         &_close{
+            display: none;
             position: fixed;
             top: 20px;
             right: 50px;
             border: none;
             font-size: 25px;
             color: #fff;
+
+        @media screen and (max-width: 835px){
+            display: block;
+        }
         }
     }
 }
