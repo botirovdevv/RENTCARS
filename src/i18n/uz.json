@@ -4,5 +4,16 @@
   "about": "Biz haqimizda",
   "contact": "Aloqa",
   "sign-in": "Kirish",
-  "sign-up": "Ro'yxatdan o'tish"
+  "sign-up": "Ro'yxatdan o'tish",
+  "how-it-work": "QANDAY ISHLADI",
+  "step": "Quyidagi 3 qadam bilan ijaraga oling",
+  "location": "Manzilni tanlang",
+  "date": "Qabul qilish kuni",
+  "book": "Mashinangizni bron qiling",
+  "title1": "O'zingizni tanlang va eng yaxshi mashinangizni toping",
+  "title2": "Avtomobilingizni bron qilish uchun olib ketish sanasi va vaqtini tanlang",
+  "title3": "Avtomobilingizni bron qiling va biz uni to'g'ridan-to'g'ri sizga etkazib beramiz",
+  "header-title": "Osonlik bilan mashina toping, bron qiling va ijaraga oling",
+  "blue-title": "",
+  "header-subtitle": "IOS va Android qurilmangiz bilan qayerda va qachon kerak bo'lsa, mashina oling."
 }
