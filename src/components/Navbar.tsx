@@ -5,16 +5,13 @@ import { CgMenuRightAlt } from "react-icons/cg";
 import { useState } from 'react';
 import { CgClose } from "react-icons/cg";
 import { FaUser } from "react-icons/fa";
-import img from '../assets/car.png'
-import playmarketimg from '../assets/images/playmarket.png'
-import appstoreimg from '../assets/images/appstore.png'
+
 
 const Navbar = () => {
   const { t, i18n } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="main">
       <nav className='nav'>
         <div className={isOpen ? "nav-bg active" : "nav-bg"} onClick={() => setIsOpen(false)}></div>
         <div className="container">
@@ -49,8 +46,8 @@ const Navbar = () => {
 
             <div className="nav-join">
               <LanguageSwitcher currentLang={i18n.language} onChange={(lang) => i18n.changeLanguage(lang)} />
-              <Link to="/" className='nav-sign_in'>{t('sign-in')}</Link>
-              <Link to="/" className='nav-user'>
+              <Link to="/login" className='nav-sign_in'>{t('sign-in')}</Link>
+              <Link to="/login" className='nav-user'>
                 <FaUser />
               </Link>
               <Link to="/" className='nav-sign_up'>{t('sign-up')}</Link>
@@ -62,38 +59,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <header className="header">
-        <div className="header-content">
-          <div className="header-texts">
-            <h1 className="header-title">
-              {t('header-title')}
-
-              <span className="header-text_underline">{t('blue-title')}
-                <span className={i18n.language === 'en' ? "header-underline" : "header-underline active"}>
-                  <svg width="135" height="20" viewBox="0 0 135 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M134.398 2.44549C57.1256 -2.5909 23.8505 5.91274 1.51269 9.4328C1.16554 12.3701 1.29738 14.7861 0.927661 19.4528C60.8229 -0.00283289 100.753 3.19444 134.353 4.43383C134.367 4.06436 134.357 3.5539 134.398 2.44549Z" fill="#1572D3" />
-                  </svg>
-                </span>
-              </span>
-            </h1>
-            <p className="header-subtitle">
-              {t('header-subtitle')}
-            </p>
-
-            <div className="header-apps">
-              <img src={playmarketimg} alt="play market" />
-              <img src={appstoreimg} alt="play market" />
-            </div>
-          </div>
-
-          <div className="header-image">
-            <div className="header-bg"></div>
-            <img src={img} className='header-img' alt="car photo" />
-          </div>
-        </div>
-      </header>
-
-    </div>
+     
   )
 }
 
