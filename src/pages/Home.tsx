@@ -5,6 +5,7 @@ import appstoreimg from '../assets/images/appstore.png'
 import '../i18n/i18n'
 import { t } from "i18next"
 import i18n from "../i18n/i18n"
+import Offer from "../components/Offer"
 
 const Home = () => {
   return (
@@ -40,6 +41,7 @@ const Home = () => {
           </div>
       </header>
       <Work/>
+      <Offer/>
 
     </main>
   )

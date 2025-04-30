@@ -50,7 +50,7 @@ const Navbar = () => {
               <Link to="/login" className='nav-user'>
                 <FaUser />
               </Link>
-              <Link to="/" className='nav-sign_up'>{t('sign-up')}</Link>
+              <Link to="/register" className='nav-sign_up'>{t('sign-up')}</Link>
               <button className="nav-menu" onClick={() => setIsOpen(true)}>
                 <CgMenuRightAlt />
               </button>

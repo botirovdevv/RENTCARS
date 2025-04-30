@@ -1,0 +1,130 @@
+.offer {
+    padding-top: 100px;
+
+    &-content {
+        @include flex(center, space-between);
+        width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            justify-content: center;
+        }
+    }
+
+    &-images {
+        position: relative;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+    }
+
+    &-image {
+        position: absolute;
+        left: -100px;
+        width: 500px;
+        height: 300px;
+    }
+
+    &-title {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #1572d3;
+        border-radius: 8px;
+        padding: 16px 32px;
+        width: 181px;
+        height: 42px;
+        background: rgba(21, 114, 211, 0.1);
+        @include flex(center, center);
+        margin-bottom: 25px;
+    }
+
+    &-subtitle {
+        font-family: $font-family;
+        font-weight: 500;
+        @include adaptive-value('font-size', 38, 23);
+        line-height: 130%;
+        color: #333;
+        width: 550px;
+
+        @media screen and (max-width: 1000px) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+    }
+
+    &-items {
+        @include flex(center, center);
+        gap: 30px;
+        flex-direction: column;
+        padding-top: 40px;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &-texts {
+        @media screen and (max-width: 1000px) {
+            @include flex(center, center);
+            flex-direction: column;
+        }
+    }
+
+    &-item {
+        @include flex(center, unset);
+        gap: 30px;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+
+        &_title {
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 150%;
+            color: #000;
+
+            @media screen and (max-width: 1000px) {
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+
+        &_subtitle {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #6d6d6d;
+            width: 332px;
+            @media screen and (max-width: 1000px) {
+                text-align: center;
+            }
+        }
+
+        &_texts {
+            @include flex(start, unset);
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &_icon {
+            border-radius: 16px;
+            width: 64px;
+            height: 64px;
+            background: #ecf5ff;
+            @include flex(center, center)
+        }
+    }
+
+}

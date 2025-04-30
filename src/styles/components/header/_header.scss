@@ -4,6 +4,10 @@
     overflow-x: clip;
     height: 100vh;
 
+    @media screen and (max-width: 950px){
+        height: 80vh;
+    }
+
     &-content {
         @include flex(center, space-between);
         gap: 15px;
