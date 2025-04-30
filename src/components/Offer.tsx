@@ -1,5 +1,4 @@
 import img from '../assets/images/audi.png'
-import icon1 from '../assets/icons/wallet.svg'
 import { useTranslation } from 'react-i18next'
 import { useOffers } from '../data/offers'
 
