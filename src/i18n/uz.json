@@ -25,5 +25,15 @@
   "offer1": "Pastroq narx topasizmi? Biz sizga 100% qaytarib beramiz.",
   "offer2": "Haydovchi yo'qmi? Xavotir olmang, bizda juda ko'p siz uchun tajribali haydovchi.",
   "offer3": "Istalgan vaqtda mashinangizni bron qiling va biz uni yetkazib beramiz",
-  "offer4": "Savolingiz bormi? Rentcars qo'llab-quvvatlash xizmatiga murojaat qiling"
+  "offer4": "Savolingiz bormi? Rentcars qo'llab-quvvatlash xizmatiga murojaat qiling",
+  "passagers": "yo'lovchilar",
+  "air-conditioner": "Havo sovutish",
+  "doors": "eshik",
+  "price-title": "Narxi",
+  "day": "kuniga",
+  "rent-btn": "Bron qilish",
+  "auto": "avto",
+  "reviews": "ko'rilgan",
+  "famous-rent": "Mashur ijaralar",
+  "cars-rental": "Eng mashhur avtoulovlarni ijaraga berish"
 }

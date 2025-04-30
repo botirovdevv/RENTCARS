@@ -635,4 +635,168 @@ body.scroll {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cars {
+  padding-top: 100px;
+}
+.cars-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1572d3;
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 226px;
+  height: 42px;
+  background: rgba(21, 114, 211, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 1260px) {
+  .cars-title {
+    font-size: calc(12px + 2 * (100vw - 320px) / 940);
+  }
+}
+.cars-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  color: #333;
+  text-align: center;
+  padding: 10px 0 40px 0;
+}
+@media (max-width: 1260px) {
+  .cars-subtitle {
+    font-size: calc(30px + 8 * (100vw - 320px) / 940);
+  }
+}
+.cars-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+@media screen and (max-width: 1155px) {
+  .cars-cards {
+    justify-content: center;
+  }
+}
+.cars-card {
+  width: 256px;
+  height: 405px;
+  box-shadow: 0 12px 24px 0 rgba(16, 76, 139, 0.16);
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 25px;
+  gap: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.cars-card:hover {
+  transform: translateY(-20px);
+}
+.cars-car {
+  width: 208px;
+  height: 104px;
+  border-radius: 16px 16px 0 0;
+}
+.cars-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 106%;
+  color: #262626;
+  padding-top: 15px;
+}
+.cars-rate_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 142%;
+  color: #000;
+}
+.cars-rate_span {
+  font-weight: 400;
+  color: #808080;
+}
+.cars-info_card {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 5px;
+  padding-top: 10px;
+}
+.cars-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.cars-info_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 142%;
+  color: #959595;
+}
+.cars-line {
+  border: 1px solid #e0e0e0;
+  width: 208px;
+  height: 0px;
+  margin: 20px 0;
+}
+.cars-price_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cars-price_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 121%;
+  color: #595959;
+}
+.cars-price {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 106%;
+  color: #292929;
+}
+.cars-day {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+.cars-rent_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 121%;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  height: 40px;
+  background: #1572d3;
+  margin-top: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.cars-rent_link:hover {
+  opacity: 0.8;
 }/*# sourceMappingURL=Main.css.map */
