@@ -31,7 +31,7 @@
         flex-wrap: wrap;
         gap: 24px;
 
-        @media screen and (max-width: 1155px){
+        @media screen and (max-width: 1155px) {
             justify-content: center;
         }
     }
@@ -47,7 +47,8 @@
         padding: 25px;
         gap: 8px;
         transition: all 0.2s ease-in-out;
-        &:hover{
+
+        &:hover {
             transform: translateY(-20px);
         }
     }
@@ -149,8 +150,24 @@
         margin-top: 10px;
         transition: all 0.2s ease-in-out;
 
-        &:hover{
+        &:hover {
             opacity: 0.8;
         }
+    }
+
+    &-link {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 130%;
+        color: #4e4e4e;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 8px;
+        width: 216px;
+        height: 48px;
+        @include flex(center, center);
+        margin: 0 auto;
+        margin-top: 50px;
     }
 }

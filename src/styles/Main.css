@@ -799,4 +799,103 @@ body.scroll {
 }
 .cars-rent_link:hover {
   opacity: 0.8;
+}
+.cars-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #4e4e4e;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px;
+  width: 216px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.testimonials {
+  padding: 100px 0;
+}
+.testimonials-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1572d3;
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 161px;
+  height: 42px;
+  background: rgba(21, 114, 211, 0.1);
+  margin: 0 auto;
+}
+.testimonials-subtitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 130%;
+  color: #333;
+  text-align: center;
+  padding: 20px 0 45px 0;
+}
+.testimonials-card {
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+  gap: 30px;
+  border-radius: 24px;
+  width: 794px;
+  height: 438px;
+  box-shadow: 0 12px 24px 0 rgba(16, 76, 139, 0.16);
+  background: #fff;
+}
+.testimonials-img {
+  width: 397px;
+  height: 438px;
+}
+.testimonials-rate {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 150%;
+  color: #383838;
+}
+.testimonials-stars {
+  font-size: 24px;
+}
+.testimonials-feedback {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #282828;
+  width: 350px;
+  padding-top: 50px;
+}
+.testimonials-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.testimonials-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #252525;
+}
+.testimonials-country {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #838383;
 }/*# sourceMappingURL=Main.css.map */

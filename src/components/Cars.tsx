@@ -62,6 +62,7 @@ const Cars = () => {
                             ))
                         }
                     </div>
+                    <Link to={'#'} className='cars-link'>{t('car-link')}</Link>
                 </div>
             </div>
         </section>

@@ -1,0 +1,87 @@
+.testimonials {
+    padding: 100px 0;
+
+    &-title {
+        @include flex(center, center);
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #1572d3;
+        border-radius: 8px;
+        padding: 16px 32px;
+        width: 161px;
+        height: 42px;
+        background: rgba(21, 114, 211, 0.1);
+        margin: 0 auto;
+    }
+
+    &-subtitle {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 130%;
+        color: #333;
+        text-align: center;
+        padding: 20px 0 45px 0;
+    }
+
+    &-card {
+        @include flex(center, unset);
+        gap: 30px;
+        border-radius: 24px;
+        width: 794px;
+        height: 438px;
+        box-shadow: 0 12px 24px 0 rgba(16, 76, 139, 0.16);
+        background: #fff;
+    }
+
+    &-img {
+        width: 397px;
+        height: 438px;
+    }
+
+    &-rate {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 150%;
+        color: #383838;
+    }
+
+    &-stars {
+        font-size: 24px;
+    }
+
+    &-feedback {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #282828;
+        width: 350px;
+        padding-top: 50px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    &-name {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        color: #252525;
+    }
+
+    &-country {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #838383;
+    }
+}
